@@ -35,7 +35,7 @@ function DietPlans() {
                             : "/my";
 
                 const response = await axios.get(
-                    `http://localhost:7000/api/diet-plans${endpoint}`,
+                    `https://fitzone-gym-management-gyax.onrender.com/api/diet-plans${endpoint}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -66,7 +66,7 @@ function DietPlans() {
                 const token = localStorage.getItem("token");
 
                 const response = await axios.get(
-                    "http://localhost:7000/api/trainers/members/active",
+                    "https://fitzone-gym-management-gyax.onrender.com/api/trainers/members/active",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -89,7 +89,7 @@ function DietPlans() {
                 const token = localStorage.getItem("token");
 
                 const response = await axios.get(
-                    "http://localhost:7000/api/auth/me",
+                    "https://fitzone-gym-management-gyax.onrender.com/api/auth/me",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -166,7 +166,7 @@ function DietPlans() {
             }));
 
             await axios.put(
-                `http://localhost:7000/api/diet-plans/${editingPlanId}`,
+                `https://fitzone-gym-management-gyax.onrender.com/api/diet-plans/${editingPlanId}`,
                 {
                     name: planName,
                     description,
@@ -197,7 +197,7 @@ function DietPlans() {
             ]);
 
             const updatedResponse = await axios.get(
-                "http://localhost:7000/api/diet-plans/trainer",
+                "https://fitzone-gym-management-gyax.onrender.com/api/diet-plans/trainer",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -229,7 +229,7 @@ function DietPlans() {
             const token = localStorage.getItem("token");
 
             await axios.delete(
-                `http://localhost:7000/api/diet-plans/${id}`,
+                `https://fitzone-gym-management-gyax.onrender.com/api/diet-plans/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -282,7 +282,7 @@ function DietPlans() {
             const token = localStorage.getItem("token");
 
             const response = await axios.post(
-                "http://localhost:7000/api/diet-plans",
+                "https://fitzone-gym-management-gyax.onrender.com/api/diet-plans",
                 {
                     memberId: selectedMember,
                     name: planName,
@@ -312,7 +312,7 @@ function DietPlans() {
             ]);
 
             const updatedResponse = await axios.get(
-                "http://localhost:7000/api/diet-plans/trainer",
+                "https://fitzone-gym-management-gyax.onrender.com/api/diet-plans/trainer",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,

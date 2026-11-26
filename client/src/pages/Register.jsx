@@ -32,7 +32,7 @@ function Register() {
 
         try {
             const response = await axios.post(
-                "http://localhost:7000/api/auth/register",
+                "https://fitzone-gym-management-gyax.onrender.com/api/auth/register",
                 formData
             );
 

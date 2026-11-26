@@ -14,8 +14,8 @@ const PaymentHistory = () => {
             try {
                 const endpoint =
                     role === "admin"
-                        ? "http://localhost:7000/api/payments/all-history"
-                        : "http://localhost:7000/api/payments/my-history";
+                        ? "https://fitzone-gym-management-gyax.onrender.com/api/payments/all-history"
+                        : "https://fitzone-gym-management-gyax.onrender.com/api/payments/my-history";
 
                 const response = await axios.get(endpoint, {
                     headers: {

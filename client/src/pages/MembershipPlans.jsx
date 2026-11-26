@@ -25,7 +25,7 @@ const MembershipPlans = () => {
       setLoading(true);
 
       const response = await axios.get(
-        "http://localhost:7000/api/membership-plans"
+        "https://fitzone-gym-management-gyax.onrender.com/api/membership-plans"
       );
 
       if (response.data.success) {
@@ -62,7 +62,7 @@ const MembershipPlans = () => {
       }
 
       const { data } = await axios.post(
-        "http://localhost:7000/api/payments/create-order",
+        "https://fitzone-gym-management-gyax.onrender.com/api/payments/create-order",
         { planId: plan._id },
         {
           headers: {
@@ -82,7 +82,7 @@ const MembershipPlans = () => {
         handler: async function (response) {
           try {
             const verifyResponse = await axios.post(
-              "http://localhost:7000/api/payments/verify",
+              "https://fitzone-gym-management-gyax.onrender.com/api/payments/verify",
               {
                 ...response,
                 planId: plan._id,

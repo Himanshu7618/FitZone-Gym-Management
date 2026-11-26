@@ -28,7 +28,7 @@ function ProgressTracking() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:7000/api/progress/my",
+                "https://fitzone-gym-management-gyax.onrender.com/api/progress/my",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -88,7 +88,7 @@ function ProgressTracking() {
             const token = localStorage.getItem("token");
 
             const response = await axios.post(
-                "http://localhost:7000/api/progress",
+                "https://fitzone-gym-management-gyax.onrender.com/api/progress",
                 {
                     weight,
                     height,
@@ -178,7 +178,7 @@ function ProgressTracking() {
             const token = localStorage.getItem("token");
 
             const response = await axios.put(
-                `http://localhost:7000/api/progress/${editingId}`,
+                `https://fitzone-gym-management-gyax.onrender.com/api/progress/${editingId}`,
                 {
                     weight,
                     height,
@@ -223,7 +223,7 @@ function ProgressTracking() {
             const token = localStorage.getItem("token");
 
             const response = await axios.delete(
-                `http://localhost:7000/api/progress/${id}`,
+                `https://fitzone-gym-management-gyax.onrender.com/api/progress/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,

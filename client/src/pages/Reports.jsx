@@ -25,7 +25,7 @@ const Reports = () => {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:7000/api/reports",
+          "https://fitzone-gym-management-gyax.onrender.com/api/reports",
           {
             headers: {
               Authorization: `Bearer ${token}`,

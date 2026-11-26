@@ -28,7 +28,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:7000/api/auth/login",
+        "https://fitzone-gym-management-gyax.onrender.com/api/auth/login",
         formData
       );
 

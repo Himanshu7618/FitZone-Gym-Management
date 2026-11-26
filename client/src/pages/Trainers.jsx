@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:7000/api/trainers";
+const API = "https://fitzone-gym-management-gyax.onrender.com/api/trainers";
 
 const initialForm = {
   name: "",

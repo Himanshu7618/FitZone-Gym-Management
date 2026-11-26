@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:7000/api/workouts";
+const API_URL = "https://fitzone-gym-management-gyax.onrender.com/api/workouts";
 
 export default function WorkoutTracking() {
     const [workouts, setWorkouts] = useState([]);

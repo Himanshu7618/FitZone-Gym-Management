@@ -254,7 +254,7 @@ function App() {
 
       try {
         const response = await axios.get(
-          "http://localhost:7000/api/auth/me",
+          "https://fitzone-gym-management-gyax.onrender.com/api/auth/me",
           {
             headers: {
               Authorization: `Bearer ${token}`,
